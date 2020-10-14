@@ -45,6 +45,15 @@ You only need to perform this step **once per domain name**.
 
 ## Import the CA in your browser
 
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/windows.svg" alt="" align="center" height="24"> Edge & Chrome on Windows 10
+
+- open `certmgr.msc`
+- expand "Trusted Root Certification Authorities"
+- right-click on "Certificates", then "All Tasks" > "Import..."
+- click "Next"
+- choose the `ca.crt` file
+- click "Next" then "Finish"
+
 ### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/chrome.svg" alt="" align="center" height="24"> Chrome
 
 - go to `chrome://settings/certificates`
