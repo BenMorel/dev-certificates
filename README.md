@@ -81,7 +81,4 @@ Enjoy! 👋
  
 These scripts have been created from the steps highlighted in [this StackOverflow answer](https://stackoverflow.com/a/60516812/759866) by [@entrity](https://github.com/entrity).
 
-Icons by:
-
-- [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
-- [Alpár-Etele Méder](https://www.iconfinder.com/pocike)
+Icons by [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect).
