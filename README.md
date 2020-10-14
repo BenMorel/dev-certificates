@@ -15,14 +15,14 @@ Right click below, *Save Link As...*:
 - [create-ca.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-ca.sh)
 - [create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-certificate.sh)
 
-## Generate your *Certificate Authority*
+## Generate your Certificate Authority
 
-The Certificate Authority is what will make your browser trust the certificates that you'll generate for your development domains. Your browser is bundled with a list of Certificate Autorities that it trusts by default, but because you'll be signing your certificates yourself, you need to instruct it to trust your own certificates.
+The *Certificate Authority* is what will make your browser trust the certificates that you'll generate for your development domains. Your browser is bundled with a list of Certificate Autorities that it trusts by default, but because you'll be signing your certificates yourself, you need to instruct it to trust your own certificates.
 
 Just run:
 
 ```
-$ ./create-ca.sh 
+create-ca.sh 
 ```
 
 ![create-ca.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/create-ca.png)
@@ -34,7 +34,7 @@ You only need to perform this step **once**.
 To generate a certificate for `example.dev` and its subdomains, run:
 
 ```
-./create-certificate.sh example.dev
+create-certificate.sh example.dev
 ```
 
 ![create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/create-certificate.png)
@@ -79,7 +79,7 @@ Enjoy! 👋
 
 ## Credits
  
-These scripts have been created from the steps highlighted in [this StackOverflow answer](https://stackoverflow.com/a/60516812/759866).
+These scripts have been created from the steps highlighted in [this StackOverflow answer](https://stackoverflow.com/a/60516812/759866) by [@entrity](https://github.com/entrity).
 
 Icons by:
 
