@@ -75,6 +75,10 @@ You only need to perform this step **once per domain name**.
 
 You only need to perform this step **once for each browser**.
 
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari
+
+No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates/pulls) welcome!
+
 ## That's it!
 
 You should now be greeted with:
