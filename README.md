@@ -23,21 +23,7 @@ Just run:
 $ ./create-ca.sh 
 ```
 
-```
-Generating RSA private key, 2048 bit long modulus (2 primes)
-......................+++++
-......................................+++++
-e is 65537 (0x010001)
-Success!
-
-The following files have been written:
-  - ca.crt is the public certificate that should be imported in your browser
-  - ca.key is the private key that will be used by create-certificate.sh
-
-Next steps:
-  - Import ca.crt in your browser
-  - run create-certificate.sh example.com
-```
+![create-ca.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-ca.png)
 
 You only need to perform this step **once**.
 
@@ -72,19 +58,7 @@ To generate a certificate for `example.dev` and its subdomains, run:
 ./create-certificate.sh example.dev
 ```
 
-```
-Generating RSA private key, 2048 bit long modulus (2 primes)
-.................................+++++
-..................................................................................................................................................................................................+++++
-e is 65537 (0x010001)
-Signature ok
-subject=C = US, O = Local Development, CN = example.dev
-Getting CA Private Key
-Success!
-
-You can now use example.dev.key and example.dev.crt in your web server.
-Don't forget that you must have imported ca.crt in your browser to make it accept the certificate.
-```
+![create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-certificate.png)
 
 You can now install the `.key` and `.crt` files in your web server, such as Apache or Nginx.
 
