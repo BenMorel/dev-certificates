@@ -1,8 +1,10 @@
 # Create development certificates the easy way!
 
+<img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/logo.svg" alt="" align="left" height="150">
+
 If you're a web developer and need to test your websites locally on HTTPs, you probably don't want to buy an SSL certificate for this.
 
-Instead, you can **generate your own certificates!** 👍
+Instead, you can generate your own certificates! 👍
 
 However, working with the `openssl` CLI can be intimidating, and it's hard to remember the options. So I've put together these scripts and instructions to make your life easier!
 
@@ -71,9 +73,9 @@ You should now be greeted with:
 ![Chrome Secure](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/secure.png)
 
 If you need to create certificates for other domains, just run `create-certificate.sh` again.
-No need to create or import the CA again!
+**No need to create or import the CA again!**
 
-Enjoy!
+Enjoy! 👋
 
 ## Credits
  
@@ -83,4 +85,3 @@ Icons by:
 
 - [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
 - [Alpár-Etele Méder](https://www.iconfinder.com/pocike)
-
