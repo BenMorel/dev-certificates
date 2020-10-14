@@ -15,7 +15,7 @@ Right click below, *Save Link As...*:
 
 ## Generate your *Certificate Authority*
 
-The Certificate Authority is what will make your browser trust the certificates that you'll generate for your development domains. Your browser is bundled with a list of Certificate Autorities that it trusts by default, but because you'll be signing your certificates yourself, we need to instruct it to trust your own certificates.
+The Certificate Authority is what will make your browser trust the certificates that you'll generate for your development domains. Your browser is bundled with a list of Certificate Autorities that it trusts by default, but because you'll be signing your certificates yourself, you need to instruct it to trust your own certificates.
 
 Just run:
 
@@ -26,6 +26,20 @@ $ ./create-ca.sh
 ![create-ca.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-ca.png)
 
 You only need to perform this step **once**.
+
+## Generate a certificate for your domain
+
+To generate a certificate for `example.dev` and its subdomains, run:
+
+```
+./create-certificate.sh example.dev
+```
+
+![create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-certificate.png)
+
+You can now install the `.key` and `.crt` files in your web server, such as Apache or Nginx.
+
+You only need to perform this step **once per domain name**.
 
 ## Import the CA in your browser
 
@@ -50,25 +64,14 @@ You only need to perform this step **once**.
 
 You only need to perform this step **once for each browser**.
 
-## Generate your certificate
-
-To generate a certificate for `example.dev` and its subdomains, run:
-
-```
-./create-certificate.sh example.dev
-```
-
-![create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-certificate.png)
-
-You can now install the `.key` and `.crt` files in your web server, such as Apache or Nginx.
-
-You only need to perform this step **once per domain name**.
-
 ## That's it!
 
 You should now be greeted with:
 
 ![Chrome Secure](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/secure.png)
+
+If you need to create certificates for other domains, just run `create-certificate.sh` again.
+No need to create or import the CA again!
 
 Enjoy!
 
