@@ -54,7 +54,7 @@ You only need to perform this step **once per domain name**.
 - choose the `ca.crt` file
 - click "Next" then "Finish"
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/chrome.svg" alt="" align="center" height="24"> Chrome
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/chrome.svg" alt="" align="center" height="24"> Chrome on Linux
 
 - go to `chrome://settings/certificates`
 - click the "Authorities" tab
@@ -63,7 +63,7 @@ You only need to perform this step **once per domain name**.
 - check "Trust this certificate for identifying websites"
 - click "OK"
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox on Linux
 
 - go to `about:preferences#privacy`
 - scroll down to "Certificates"
@@ -75,7 +75,7 @@ You only need to perform this step **once per domain name**.
 
 You only need to perform this step **once for each browser**.
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari on macOS
 
 No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates/pulls) welcome!
 
