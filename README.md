@@ -10,8 +10,8 @@ However, working with the `openssl` CLI can be intimidating, and it's hard to re
 
 Right click below, *Save Link As...*:
 
-- create-ca.sh
-- create-certificate.sh
+- [create-ca.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-ca.sh)
+- [create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-certificate.sh)
 
 ## Generate your *Certificate Authority*
 
@@ -94,7 +94,7 @@ You only need to perform this step **once per domain name**.
 
 You should now be greeted with:
 
-(image)
+![Chrome Secure](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/secure.png)
 
 Enjoy!
 
