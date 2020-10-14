@@ -23,13 +23,13 @@ if [ ! -f "ca.key" ]; then
 fi
 
 # Generate a private key
-openssl genrsa -out $DOMAIN.key 2048
+openssl genrsa -out "$DOMAIN.key" 2048
 
 # Create a certificate signing request
-openssl req -new -subj "/C=US/O=Local Development/CN=$DOMAIN" -key $DOMAIN.key -out $DOMAIN.csr
+openssl req -new -subj "/C=US/O=Local Development/CN=$DOMAIN" -key "$DOMAIN.key" -out "$DOMAIN.csr"
 
 # Create a config file for the extensions
->$DOMAIN.ext cat <<-EOF
+>"$DOMAIN.ext" cat <<-EOF
 authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
 keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
@@ -41,17 +41,17 @@ EOF
 
 # Create the signed certificate
 openssl x509 -req \
-    -in $DOMAIN.csr \
-    -extfile $DOMAIN.ext \
+    -in "$DOMAIN.csr" \
+    -extfile "$DOMAIN.ext" \
     -CA ca.crt \
     -CAkey ca.key \
     -CAcreateserial \
-    -out $DOMAIN.crt \
+    -out "$DOMAIN.crt" \
     -days 3650 \
     -sha256
 
-rm $DOMAIN.csr
-rm $DOMAIN.ext
+rm "$DOMAIN.csr"
+rm "$DOMAIN.ext"
 
 echo -e "\e[42mSuccess!\e[49m"
 echo
