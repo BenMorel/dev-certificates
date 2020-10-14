@@ -4,7 +4,7 @@
 
 If you're a web developer and need to test your websites locally on HTTPs, you probably don't want to buy an SSL certificate for this.
 
-Instead, you can generate your own certificates! 👍
+Instead, you want to **generate your own certificates**! 💪
 
 However, working with the `openssl` CLI can be intimidating, and it's hard to remember the options. So I've put together these scripts and instructions to make your life easier!
 
