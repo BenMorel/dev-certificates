@@ -43,7 +43,7 @@ You only need to perform this step **once per domain name**.
 
 ## Import the CA in your browser
 
-### In Chrome
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/chrome.svg" alt="" align="center" height="24"> Chrome
 
 - go to `chrome://settings/certificates`
 - click the "Authorities" tab
@@ -52,7 +52,7 @@ You only need to perform this step **once per domain name**.
 - check "Trust this certificate for identifying websites"
 - click "OK"
 
-### In Firefox
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox
 
 - go to `about:preferences#privacy`
 - scroll down to "Certificates"
@@ -78,3 +78,9 @@ Enjoy!
 ## Credits
  
 These scripts have been created from the steps highlighted in [this StackOverflow answer](https://stackoverflow.com/a/60516812/759866).
+
+Icons by:
+
+- [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
+- [Alpár-Etele Méder](https://www.iconfinder.com/pocike)
+
