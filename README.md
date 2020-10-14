@@ -23,7 +23,7 @@ Just run:
 $ ./create-ca.sh 
 ```
 
-![create-ca.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-ca.png)
+![create-ca.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/create-ca.png)
 
 You only need to perform this step **once**.
 
@@ -35,7 +35,7 @@ To generate a certificate for `example.dev` and its subdomains, run:
 ./create-certificate.sh example.dev
 ```
 
-![create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/create-certificate.png)
+![create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/create-certificate.png)
 
 You can now install the `.key` and `.crt` files in your web server, such as Apache or Nginx.
 
@@ -68,7 +68,7 @@ You only need to perform this step **once for each browser**.
 
 You should now be greeted with:
 
-![Chrome Secure](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/secure.png)
+![Chrome Secure](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/secure.png)
 
 If you need to create certificates for other domains, just run `create-certificate.sh` again.
 No need to create or import the CA again!
