@@ -65,7 +65,7 @@ You only need to perform this step **once** for each browser, whatever the numbe
 - check "Trust this certificate for identifying websites"
 - click "OK"
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox on Linux
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox on Windows & Linux
 
 - go to `about:preferences#privacy`
 - scroll down to "Certificates"
@@ -91,7 +91,7 @@ If you need to create certificates for other domains, just run `create-certifica
 Enjoy! 👋
 
 ## Credits
- 
+
 These scripts have been created from the steps highlighted in [this StackOverflow answer](https://stackoverflow.com/a/60516812/759866) by [@entrity](https://github.com/entrity).
 
 Icons by [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect).
