@@ -79,16 +79,22 @@ You only need to perform this step **once** for each browser, whatever the numbe
 
 No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates/pulls) welcome!
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari on iOS
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/chrome.svg" alt="" align="center" height="24"> <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Safari, Chrome & Firefox on iOS
 
-- host your `ca.crt` certificate file somewhere on the web (I use [gist.github.com](https://gist.github.com/))
-- open the URL to the certificate in your mobile browser (I [generate a QR code](https://qr-code-generator.com/) to the raw gist URL)
-- You should be asked "This website is trying to download a configuration profile. Do you want to allow this?", tap "Allow"
-- Open the Settings app
-- Underneath your user name, tap "Profile Downloaded"
-- In the top right corner, tap "Install"
-- Enter your passcode
-- In the warning page that opens, tap "Install" again
+- Download your certificate:
+  - host your `ca.crt` certificate file somewhere on the web (I use [gist.github.com](https://gist.github.com/))
+  - open the URL to the certificate in your mobile browser (I [generate a QR code](https://qr-code-generator.com/) to the raw gist URL)
+  - You should be asked "This website is trying to download a configuration profile. Do you want to allow this?", tap "Allow"
+- Install the certificate:
+  - Open the Settings app
+  - Underneath your name, tap "Profile Downloaded"
+  - In the top right corner, tap "Install"
+  - Enter your passcode
+  - In the warning page that opens, tap "Install" again
+- Enable the certificate for websites:
+  - Go back to Settings > General > About > Certificate Trust Settings
+  - In the "Enable Full Trust for Root Certificates" section, enable the certificate you just installed
+  - In the warning that opens, click "Continue"
 
 ## That's it!
 
