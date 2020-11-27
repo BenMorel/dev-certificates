@@ -79,6 +79,17 @@ You only need to perform this step **once** for each browser, whatever the numbe
 
 No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates/pulls) welcome!
 
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari on iOS
+
+- host your `ca.crt` certificate file somewhere on the web (I use [gist.github.com](https://gist.github.com/))
+- open the URL to the certificate in your mobile browser (I [generate a QR code](https://qr-code-generator.com/) to the raw gist URL)
+- You should be asked "This website is trying to download a configuration profile. Do you want to allow this?", tap "Allow"
+- Open the Settings app
+- Underneath your user name, tap "Profile Downloaded"
+- In the top right corner, tap "Install"
+- Enter your passcode
+- In the warning page that opens, tap "Install" again
+
 ## That's it!
 
 You should now be greeted with:
