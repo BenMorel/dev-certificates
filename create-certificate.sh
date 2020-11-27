@@ -33,6 +33,7 @@ openssl req -new -subj "/C=US/O=Local Development/CN=$DOMAIN" -key "$DOMAIN.key"
 authorityKeyIdentifier=keyid,issuer
 basicConstraints=CA:FALSE
 keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth, clientAuth
 subjectAltName = @alt_names
 [alt_names]
 DNS.1 = $DOMAIN
@@ -47,7 +48,7 @@ openssl x509 -req \
     -CAkey ca.key \
     -CAcreateserial \
     -out "$DOMAIN.crt" \
-    -days 3650 \
+    -days 365 \
     -sha256
 
 rm "$DOMAIN.csr"
