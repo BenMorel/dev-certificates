@@ -79,7 +79,7 @@ You only need to perform this step **once** for each browser, whatever the numbe
 
 No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates/pulls) welcome!
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/chrome.svg" alt="" align="center" height="24"> <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Safari, Chrome & Firefox on iOS
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/apple.svg" alt="" align="center" height="24"> Safari, Chrome & Firefox on iOS
 
 - Download your certificate:
   - host your `ca.crt` certificate file somewhere on the web (I use [gist.github.com](https://gist.github.com/))
