@@ -96,6 +96,23 @@ No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates
   - In the "Enable Full Trust for Root Certificates" section, enable the certificate you just installed
   - In the warning that opens, click "Continue"
 
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/android.svg" alt="" align="center" height="24"> <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/chrome.svg" alt="" align="center" height="24"> Chrome on Android
+
+- Download your certificate:
+  - host your `ca.crt` certificate file somewhere on the web (I use [gist.github.com](https://gist.github.com/))
+  - open the URL to the certificate in your mobile browser (I [generate a QR code](https://qr-code-generator.com/) to the raw gist URL)
+  - Click the Download button in the top bar
+- Install the certificate:
+  - Go to Files > Downloads
+  - Click the `ca.crt` file
+  - Enter your PIN when prompted
+  - Give a name to the certificate
+  - Click OK
+
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/android.svg" alt="" align="center" height="24"> <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox on Android
+
+Firefox does not use Android's certificate store, but does not seem to provide a way to import a certificate. You may wish to add your voice to the [bug tracker](https://bugzilla.mozilla.org/show_bug.cgi?id=868370) if you wish to see this implemented.
+
 ## That's it!
 
 You should now be greeted with:
