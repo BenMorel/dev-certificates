@@ -65,7 +65,7 @@ You only need to perform this step **once** for each browser, whatever the numbe
 - check "Trust this certificate for identifying websites"
 - click "OK"
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox on Windows & Linux
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/firefox.svg" alt="" align="center" height="24"> Firefox on Windows, Linux & MacOS
 
 - go to `about:preferences#privacy`
 - scroll down to "Certificates"
@@ -75,9 +75,14 @@ You only need to perform this step **once** for each browser, whatever the numbe
 - check "Trust this CA to identify websites"
 - click "OK"
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari on macOS
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari & Chrome on MacOS
 
-No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates/pulls) welcome!
+- Open Keychain
+- Select "File" -> "Import Items"
+- Select the `ca.crt` file and open it
+- Find your imported certificate and open it's info
+- In the "Trust" section for "Secure Sockets Layer (SSL)" peek "Always Trust"
+- Close the window and confirm operation
 
 ### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/apple.svg" alt="" align="center" height="24"> Safari, Chrome & Firefox on iOS
 
