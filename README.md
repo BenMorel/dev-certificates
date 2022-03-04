@@ -75,9 +75,11 @@ You only need to perform this step **once** for each browser, whatever the numbe
 - check "Trust this CA to identify websites"
 - click "OK"
 
-### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari on macOS
+### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/safari.svg" alt="" align="center" height="24"> Safari, Chrome & Edge on macOS
 
-No instructions yet. [Pull request](https://github.com/BenMorel/dev-certificates/pulls) welcome!
+Safari, Chrome, Edge and Opera all use the built-in MacOS [Keychain Access](https://support.apple.com/guide/keychain-access/what-is-keychain-access-kyca1083/mac) application to manage trusted root certificates. Run the following from your terminal/shell to add `ca.crt` as a trusted root certificate:
+
+    sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ca.crt
 
 ### <img src="https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/apple.svg" alt="" align="center" height="24"> Safari, Chrome & Firefox on iOS
 
