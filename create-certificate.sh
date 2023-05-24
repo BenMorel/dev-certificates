@@ -1,19 +1,24 @@
 #!/usr/bin/env bash
 
-# Generates a wildcard certificate for a given domain name.
+# Generates a wildcard certificate for a given domain name with optional alternative domain names.
 
 set -e
 
 if [ -z "$1" ]; then
     echo -e "\e[43mMissing domain name!\e[49m"
     echo
-    echo "Usage: $0 example.com"
+    echo "Usage: $0 example.dev"
     echo
     echo "This will generate a wildcard certificate for the given domain name and its subdomains."
+    echo
+    echo "Usage: $0 example.dev alternative-domain.dev"
+    echo
+    echo "This will generate a wildcard certificate for the given domain name, alternative domains and all subdomains for each of them."
     exit
 fi
 
 DOMAIN=$1
+ALT_NAME_INDEX=0
 
 if [ ! -f "ca.key" ]; then
     echo -e "\e[41mCertificate Authority private key does not exist!\e[49m"
@@ -36,9 +41,19 @@ keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
 extendedKeyUsage = serverAuth, clientAuth
 subjectAltName = @alt_names
 [alt_names]
-DNS.1 = $DOMAIN
-DNS.2 = *.$DOMAIN
 EOF
+
+function add_alt_name() {
+    ALT_NAME_INDEX=$((ALT_NAME_INDEX + 1))
+>>"$DOMAIN.ext" cat <<-EOF
+DNS.$ALT_NAME_INDEX = $1
+EOF
+}
+
+for domain_alt in "${@}"; do
+    add_alt_name $domain_alt
+    add_alt_name "*.$domain_alt"
+done
 
 # Create the signed certificate
 openssl x509 -req \
