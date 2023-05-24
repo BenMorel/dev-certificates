@@ -37,6 +37,12 @@ To generate a certificate for `example.dev` and its subdomains, run:
 create-certificate.sh example.dev
 ```
 
+To generate a certificate for `example.dev` along with one or more [alternative domains](https://en.wikipedia.org/wiki/Subject_Alternative_Name), run:
+
+```
+create-certificate.sh example.dev alternative-domain.dev alternative-domain.test
+```
+
 ![create-certificate.sh](https://raw.githubusercontent.com/BenMorel/dev-certificates/main/images/create-certificate.png)
 
 You can now install the `.key` and `.crt` files in your web server, such as Apache or Nginx.
